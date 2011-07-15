@@ -1,0 +1,15 @@
+<h1>Neverending</h1>
+<p>Login to Neverending</p>
+
+<%= form_tag "" do %>
+	<%= label_tag (:q, "Email") %>
+	<%= text_field_tag "Email", ""%>
+	<%= label_tag (:q, "Password") %>
+	<%= text_field_tag "Password", ""%>
+	<%= submit_tag "Login" %>
+
+<% end %>
+
+<br />
+<br />
+<%= link_to "characters", characters_path %>

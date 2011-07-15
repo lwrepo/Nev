@@ -1,0 +1,37 @@
+<h1>Listing characters</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Father</th>
+    <th>Mother</th>
+    <th>Siblings</th>
+    <th>Soulmate</th>
+    <th>Children</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @characters.each do |character| %>
+  <tr>
+    <td><%= character.name %></td>
+    <td><%= character.age %></td>
+    <td><%= character.gender %></td>
+    <td><%= character.father %></td>
+    <td><%= character.mother %></td>
+    <td><%= character.siblings %></td>
+    <td><%= character.soulmate %></td>
+    <td><%= character.children %></td>
+    <td><%= link_to 'Show', character %></td>
+    <td><%= link_to 'Edit', edit_character_path(character) %></td>
+    <td><%= link_to 'Destroy', character, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Character', new_character_path %>

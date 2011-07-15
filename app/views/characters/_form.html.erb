@@ -1,0 +1,49 @@
+<%= form_for(@character) do |f| %>
+  <% if @character.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character.errors.count, "error") %> prohibited this character from being saved:</h2>
+
+      <ul>
+      <% @character.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br />
+    <%= f.text_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :father %><br />
+    <%= f.text_field :father %>
+  </div>
+  <div class="field">
+    <%= f.label :mother %><br />
+    <%= f.text_field :mother %>
+  </div>
+  <div class="field">
+    <%= f.label :siblings %><br />
+    <%= f.text_field :siblings %>
+  </div>
+  <div class="field">
+    <%= f.label :soulmate %><br />
+    <%= f.text_field :soulmate %>
+  </div>
+  <div class="field">
+    <%= f.label :children %><br />
+    <%= f.text_field :children %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

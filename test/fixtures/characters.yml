@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  age: 1
+  gender: MyString
+  father: MyString
+  mother: MyString
+  siblings: MyString
+  soulmate: MyString
+  children: MyString
+
+two:
+  name: MyString
+  age: 1
+  gender: MyString
+  father: MyString
+  mother: MyString
+  siblings: MyString
+  soulmate: MyString
+  children: MyString

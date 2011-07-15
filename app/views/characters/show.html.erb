@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @character.name %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @character.age %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @character.gender %>
+</p>
+
+<p>
+  <b>Father:</b>
+  <%= @character.father %>
+</p>
+
+<p>
+  <b>Mother:</b>
+  <%= @character.mother %>
+</p>
+
+<p>
+  <b>Siblings:</b>
+  <%= @character.siblings %>
+</p>
+
+<p>
+  <b>Soulmate:</b>
+  <%= @character.soulmate %>
+</p>
+
+<p>
+  <b>Children:</b>
+  <%= @character.children %>
+</p>
+
+
+<%= link_to 'Edit', edit_character_path(@character) %> |
+<%= link_to 'Back', characters_path %>
