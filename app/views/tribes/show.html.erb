@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @tribe.name %>
+</p>
+
+<p>
+  <b>Chief:</b>
+  <%= @tribe.chief %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @tribe.location %>
+</p>
+
+<p>
+  <b>Ancestry:</b>
+  <%= @tribe.ancestry %>
+</p>
+
+
+<%= link_to 'Edit', edit_tribe_path(@tribe) %> |
+<%= link_to 'Back', tribes_path %>

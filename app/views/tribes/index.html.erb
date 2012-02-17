@@ -1,0 +1,29 @@
+<h1>Listing tribes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Chief</th>
+    <th>Location</th>
+    <th>Ancestry</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tribes.each do |tribe| %>
+  <tr>
+    <td><%= tribe.name %></td>
+    <td><%= tribe.chief %></td>
+    <td><%= tribe.location %></td>
+    <td><%= tribe.ancestry %></td>
+    <td><%= link_to 'Show', tribe %></td>
+    <td><%= link_to 'Edit', edit_tribe_path(tribe) %></td>
+    <td><%= link_to 'Destroy', tribe, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tribe', new_tribe_path %>

@@ -1,4 +1,7 @@
 <h1>Neverending</h1>
+
+suomi | english
+
 <p>Login to Neverending</p>
 
 <%= form_tag "" do %>
@@ -12,4 +15,8 @@
 
 <br />
 <br />
-<%= link_to "characters", characters_path %>
+<%= link_to t("titles.characters"), characters_path %>
+<br />
+<%= link_to t("titles.tribes"), tribes_path %>
+<br />
+<%= link_to t('titles.users'), users_path %>
