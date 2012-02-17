@@ -1,0 +1,21 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+  
+titles:
+  characters: "Hahmot"
+  
+characters:  
+  new: "Uusi hahmo"
+  edit: "Muuta hahmoa"
+  name: "Nimi"
+  age: "Ikä"
+  soulname: "Sielun nimi"
+  gender: "Sukupuoli"
+  father: "Isä"
+  mother: "Äiti"
+  siblings: "Sisarukset"
+  soulmate: "Sielun kumppani"
+  children: "Lapset"  

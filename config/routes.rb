@@ -1,7 +1,10 @@
 Nev::Application.routes.draw do
-  resources :characters
-
-  resources :characers
+  
+  scope "(:locale)", :locale => /en|fi/ do
+    resources :characters
+    resources :users
+    resources :tribes
+  end
 
   get "home/index"
 
@@ -54,6 +57,7 @@ Nev::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
+  match '/:locale' => 'dashboard#index'
   root :to => "home#index"
 
   # See how all your routes lay out with "rake routes"

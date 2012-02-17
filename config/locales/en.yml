@@ -6,6 +6,18 @@ en:
   
 titles:
   characters: "Characters"
+  tribes: "Tribes"
+  Users: "Users"
   
 characters:  
+  new: "New character"
+  edit: "Editing character"
   name: "Name"
+  age: "Age"
+  soulname: "Soulname"
+  gender: "Gender"
+  father: "Father"
+  mother: "Mother"
+  siblings: "Siblings"
+  soulmate: "Soulmate"
+  children: "Children"  
