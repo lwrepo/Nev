@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  chief: MyString
+  location: MyString
+  ancestry: MyString
+
+two:
+  name: MyString
+  chief: MyString
+  location: MyString
+  ancestry: MyString
