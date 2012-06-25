@@ -1,0 +1,42 @@
+/*
+ * Main CSS for The Neverending
+ * Author: Laura Repo
+ * 21st of June, 2012
+ *
+ */
+head{
+	height: em;
+}
+
+body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+header{
+	width: 100%;
+	height: 3.5em;
+	background-color: green;
+	margin-top: 0px;
+}
+
+header h1{
+	color: white;
+	width: 8em;
+	padding-top: 0.4em;
+	padding-left: 0.3em;
+}
+
+section.login{
+	float: right;
+	margin-top: 0.8em;
+}
+
+section.login input{
+	width: 6em;
+}
+
+nav ul li{
+	
+}

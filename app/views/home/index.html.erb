@@ -1,17 +1,31 @@
-<h1>Neverending</h1>
+<header>
 
-suomi | english
+	<section class="login">
+		<%= form_tag("", :method=> "post") do %>
+			<%#= label_tag (:q, "Email") %>
+			<%= text_field_tag "Email", "" %>
+			<%#= label_tag (:q, "Password") %>
+			<%= text_field_tag "Password", "" %>
+			<%= submit_tag "Login" %>
+		<% end %>
+	</section>	
 
-<p>Login to Neverending</p>
+	<h1>Neverending</h1>
+</header>
 
-<%= form_tag "" do %>
-	<%= label_tag (:q, "Email") %>
-	<%= text_field_tag "Email", ""%>
-	<%= label_tag (:q, "Password") %>
-	<%= text_field_tag "Password", ""%>
-	<%= submit_tag "Login" %>
+<nav>
+	<ul>
+		<li>Fan Art</li>
+		<li>Fan Fiction</li>
+		<li>Characters</li>
+		<li>Tribes</li>
+		<li>World map</li>								
+	</ul>	
+</nav>
 
-<% end %>
+
+
+
 
 <br />
 <br />
